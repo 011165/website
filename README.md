@@ -1,20 +1,25 @@
 # website
-Date Created: 11/02/19
 
-Create github repository
-Create a HTML website with Styling
-Create HTML form and embed into website
+Instructions for creating a website login
 
+1) Create github repository 
+2) Create a HTML website with Styling 
+3) Create HTML form and embed into website 
+ ```
+ 
 <form action = "<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method = "post">
-   <label>UserName  :</label><input type = "text" name = "UserName" class = "box"/><br /><br />
-   <label>Password  :</label><input type = "password" name = "Password" class = "box" /><br/><br />
-   <input type = "submit" value = " Submit "/><br />
-   </form>
-   
-Create database called forum in MY SQL using the graphical user interface.
+    <label>UserName  :</label><input type = "text" name = "UserName" class = "box"/><br /><br />
+    <label>Password  :</label><input type = "password" name = "Password" class = "box" /><br/><br />
+    <input type = "submit" value = " Submit "/><br />
+    </form>
+    
+ ```
 
-Create users table, create attributes: UserID, username, password.
+4)	Create database called forum in MY SQL using the graphical user interface.
 
+5)	Create users table, create attributes: UserID, username, password.
+
+```
 
 CREATE TABLE `users` (
   `UserID` int(11) NOT NULL,
@@ -23,14 +28,23 @@ CREATE TABLE `users` (
   `Role` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
-Create topic table, create attribute: Topic ID and comment
+```
+
+6)	Create topic table, create attribute: Topic ID and comment
+
+```
 
 CREATE TABLE `topic1` (
   `TopicID` int(11) NOT NULL,
   `Comment` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
-Create PHP config file include the following code
+```
+
+
+7)	Create PHP config file include the following code 
+
+```
 
 <?php
 	   define('DB_SERVER', 'localhost');
@@ -43,7 +57,11 @@ Create PHP config file include the following code
 	}
 	?>
   
-Create PHP login file include the following code:
+  ```
+  
+8)	Create PHP login file include the following code:
+
+```
 <?php
 	   include("config.php");
 	   session_start();
@@ -74,3 +92,5 @@ Create PHP login file include the following code:
 	      }
 	   }
 	?>
+
+```
