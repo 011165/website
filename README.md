@@ -1,4 +1,4 @@
-# website
+# Website
 
 Instructions for creating a website login
 
